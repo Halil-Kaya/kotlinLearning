@@ -1,0 +1,2 @@
+rootProject.name='manzaraApp'
+include ':app'

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="linearActivity"
+            android:text="Linear Layout"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="relativeLayout"
+            android:textStyle="bold|italic"
+            android:text="Relative Layout"
+            android:textColor="@android:color/white" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPink"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"
+            android:onClick="frameLayout"
+            android:text="Frame Layout" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorGreen"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"
+            android:onClick="tableLayout"
+            android:text="Table Layout" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"
+            android:onClick="tableLayout2"
+            android:text="Table Layout 2" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grid Layout"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="30dp"
+            android:onClick="gridLayout"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RealitiveActivity">
+
+
+
+
+
+        <Button
+            android:id="@+id/btnOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orange"
+            android:textStyle="bold|italic"
+            android:background="@color/colorOrange"
+            android:textColor="@android:color/white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+        <Button
+            android:id="@+id/btnBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:textStyle="bold|italic"
+            android:background="@color/colorBlue"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            />
+
+
+        <Button
+            android:id="@+id/btnGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorGreen"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            />
+
+
+        <Button
+            android:id="@+id/btnPink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pink"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPink"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+
+        <Button
+            android:id="@+id/btnRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorRed"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+        <Button
+            android:id="@+id/btnRed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textStyle="bold|italic"
+            android:background="@color/colorRed"
+            android:textColor="@color/colorWhite"
+            android:layout_toLeftOf="@+id/btnBlue"
+            android:layout_toRightOf="@+id/btnOrange"
+            android:layout_below="@+id/btnBlue"
+            />
+
+
+        <Button
+            android:id="@+id/btnOrange2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orange"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"
+            android:layout_above="@+id/btnRed"
+            android:layout_toLeftOf="@+id/btnRed"
+            />
+
+        <Button
+            android:id="@+id/btnBlue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBlue"
+            android:layout_above="@+id/btnRed"
+            android:layout_toRightOf="@+id/btnRed"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+            android:id="@+id/btnGreen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorGreen"
+            android:layout_below="@+id/btnRed"
+            android:layout_toLeftOf="@id/btnRed"
+            />
+
+
+        <Button
+            android:id="@+id/btnPink2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pink"
+            android:background="@color/colorPink"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold|italic"
+            android:layout_below="@id/btnRed"
+            android:layout_toRightOf="@id/btnRed"
+            android:layout_above="@+id/btnPink"
+            android:layout_toLeftOf="@+id/btnPink"
+            />
+
+
+
+
+</RelativeLayout>

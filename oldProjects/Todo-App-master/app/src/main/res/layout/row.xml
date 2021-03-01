@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        />
+
+
+    <TextView
+        android:id="@+id/metin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asdasdasd"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/btnDuzenle"
+        android:layout_toRightOf="@id/checkbox"/>
+
+    <Button
+        android:id="@+id/btnDuzenle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@id/btnSil"
+        android:layout_centerVertical="true"
+        android:background="@drawable/editicon"/>
+
+    <Button
+        android:id="@+id/btnSil"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/trashicon"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

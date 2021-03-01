@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="408dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etBaslik"
+        android:layout_width="302dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Baslik Gir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <EditText
+        android:id="@+id/etYazi"
+        android:layout_width="302dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:ems="20"
+        android:textSize="15dp"
+        android:hint="Yazi Gir"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/etBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/etBaslik" />
+
+    <Button
+        android:id="@+id/btnEkle"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/addicon"
+        app:layout_constraintBottom_toBottomOf="@+id/etYazi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etBaslik"
+        app:layout_constraintTop_toTopOf="@+id/etBaslik" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etYazi" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reclerViewRoot"
+        android:layout_width="395dp"
+        android:layout_height="447dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
